@@ -1,0 +1,61 @@
+<!doctype HTML>
+
+<HTML>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flu Hospitalization Rate</title>
+   <!-- Libraries -->
+
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js"></script>
+    
+    <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
+    
+    <!-- d3 color libraries-->
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  
+    <!-- your script file -->
+    <script src="js/main.js"></script>
+  
+    <!-- Custom files -->
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+  
+ <div class="container-fluid" >
+  <h2>Flu Hospitalization Rate</h2><br>
+   <h4>Line Graph: Weekly Flu Hospitalization Rate with Clickable Legend</h4>
+       <div class="select-group">
+            <select id="state-name-select">
+            </select> <!-- Update the options with the state names in the data set-->
+       
+            <select id="mmwr-year-select">
+            </select> <!-- Update the options with the mmwr year in the data set-->
+       </div>
+           <br> 
+          <div class="note" id="data-source">
+             <p>Data Source: Weekly flu hospitalization rate data were downloaded from <a href="https://gis.cdc.gov/GRASP/Fluview/FluHospRates.html" style="color:#15ffc7;font-weight:bold">CDC website</a>. </p>
+             
+            <p>The MMWR week is the week of the epidemiologic year for which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned by the reporting local or state health department for the purposes of MMWR disease incidence reporting and publishing. Values for MMWR week range from 1 to 53, although most years consist of 52 weeks.</p>
+            
+            <p>Click the legend to show and hide groups.</p>
+          </div>  
+      
+ 
+     <div class="svg-container" id="flu-hos-rate">
+     </div> 
+   
+     
+ </div>
+</body>
+</HTML>

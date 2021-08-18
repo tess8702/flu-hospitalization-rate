@@ -1,0 +1,86 @@
+/* Main CSS file */
+
+body{
+    color: #f5f5f5;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color:#121212;
+}
+
+h2 {
+  color:#15ffc7;
+  font-weight: 800;
+}
+
+h4 {
+  color:#15ffc7;
+  font-weight: 700;
+}
+
+p{
+  font-size:14px;
+}
+
+.title {
+  padding:10px;
+  color: black;
+  opacity: 0.95;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+#state-name-select {
+  color:black;
+}
+
+#mmwr-year-select {
+  color:black;
+}
+
+.x-axis line{
+  stroke: #f5f5f5;
+}
+
+.x-axis path{
+  stroke: #f5f5f5;
+}
+
+.x-axis text{
+  fill: #f5f5f5;
+} 
+
+
+
+.y-axis line{
+  stroke: #f5f5f5;
+}
+
+.y-axis path{
+  stroke: #f5f5f5;
+}
+
+.y-axis text{
+  fill: #f5f5f5;
+} 
+.axis-title text{
+  fill: #f5f5f5;
+}
+
+
